@@ -83,6 +83,6 @@ console.log("That item is not in your cart.");
 
 function placeOrder(cardNumber) {
 
-if 
+if Boolean(cardNumber)
 
 }
