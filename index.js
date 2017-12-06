@@ -72,7 +72,7 @@ function total() {
   // okay, so cart is an array of objects. iterate over the array, and each time test for hasOwnProperty("beef") or whatever, and if it passes, splice it out.
 
 function removeFromCart(item) {
-  for (i = 0; i < cart.length; i++) {
+  for (var i = 0; i < cart.length; i++) {
     if (cart[i].hasOwnProperty(item)) {
       cart.splice(i,1);
       return cart;
