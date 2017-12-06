@@ -76,10 +76,8 @@ function removeFromCart(item) {
     if (cart[i].hasOwnProperty(item)) {
       return cart.splice(i,1);
     }
-    return "That item is not in your cart.";
   }
-  
-  
+   return "That item is not in your cart.";
 }
 
 function placeOrder(cardNumber) {
