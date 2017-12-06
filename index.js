@@ -74,7 +74,7 @@ function removeFromCart(item) {
   
   for (i = 0; i < cart.length; i++) {
     if (cart[i].hasOwnProperty(item)) {
-      
+      return cart.splice(i,1);
     }
   }
   
