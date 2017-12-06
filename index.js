@@ -70,6 +70,11 @@ function removeFromCart(item) {
   //   + If the item *is* present in the cart, the function should remove the object from the cart and then return the updated cart.
   //   + ***HINT***: Check each object's key (the name of the item) to see if it matches the parameter, then remove it if it matches. You might find [hasOwnProperty](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty) to be useful.
   //Code goes here.
+  // okay, so cart is an array of objects. iterate over the array, and each time test for hasOwnProperty("beef") or whatever, and if it passes, splice it out.
+  
+  for (i = 0; i < cart.length; i++) {
+    
+  }
   
   
 }
