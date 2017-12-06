@@ -64,12 +64,7 @@ function total() {
     return totalPrice;
   }
 
-  // // 4. The `removeFromCart()` function accepts one argument, the name of the item that should be removed.
-  //   + If the cart does not contain a matching item, the function should print out `That item is not in your cart.` and return the unchanged cart.
-  //   + If the item *is* present in the cart, the function should remove the object from the cart and then return the updated cart.
-  //   + ***HINT***: Check each object's key (the name of the item) to see if it matches the parameter, then remove it if it matches. You might find [hasOwnProperty](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty) to be useful.
-  //Code goes here.
-  // okay, so cart is an array of objects. iterate over the array, and each time test for hasOwnProperty("beef") or whatever, and if it passes, splice it out.
+// removeFromCart() passes.
 
 function removeFromCart(item) {
   for (var i = 0; i < cart.length; i++) {
@@ -81,11 +76,13 @@ function removeFromCart(item) {
 console.log("That item is not in your cart.");
 }
 
-function placeOrder(cardNumber) {
 // 5. The `placeOrder()` function accepts one argument, a credit card number.
 //     + If no argument is received, the function should print out `Sorry, we don't have a credit card on file for you.`.
 //     + If a card number is received, the function should print out `Your total cost is $71, which will be charged to the card 83296759.` (where `71` is the value returned by `total()` and `83296759` is the credit card number passed to `placeOrder()`). Then, it should empty the `cart` array.
 //     Code goes here.
+
+function placeOrder(cardNumber) {
+
 
 
 }
