@@ -64,14 +64,14 @@ function total() {
     return totalPrice;
   }
 
-function removeFromCart(item) {
   // // 4. The `removeFromCart()` function accepts one argument, the name of the item that should be removed.
   //   + If the cart does not contain a matching item, the function should print out `That item is not in your cart.` and return the unchanged cart.
   //   + If the item *is* present in the cart, the function should remove the object from the cart and then return the updated cart.
   //   + ***HINT***: Check each object's key (the name of the item) to see if it matches the parameter, then remove it if it matches. You might find [hasOwnProperty](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty) to be useful.
   //Code goes here.
   // okay, so cart is an array of objects. iterate over the array, and each time test for hasOwnProperty("beef") or whatever, and if it passes, splice it out.
-  
+
+function removeFromCart(item) {
   for (i = 0; i < cart.length; i++) {
     if (cart[i].hasOwnProperty(item)) {
       cart.splice(i,1);
