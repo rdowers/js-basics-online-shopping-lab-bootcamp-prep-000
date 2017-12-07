@@ -85,7 +85,7 @@ function placeOrder(cardNumber) {
 
 if (Boolean(cardNumber)) {
 var response = `Your total cost is $${total}, which will be charged to the card ${cardNumber}.`;
-return response;
+console.log(response);
   }
   console.log("Sorry, we don't have a credit card on file for you.");
 }
